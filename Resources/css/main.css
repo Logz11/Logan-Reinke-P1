@@ -2,6 +2,8 @@
 /* BASIC SETUP */
 /* --------------------------------------------- */
 
+/*Lilac color = #dda3ff*/
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@
 html,
 body {
     background-color: #fff;
-    color: #5f5f5f;
+    color: #cecece;
     font-family: 'Lato', 'Permanent Marker', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -54,7 +56,7 @@ main {
 }
 
 /* --------------------------------------------- */
-/* HEADINGS */
+/* HEADINGS AND EFFECTS H1 - H6 */
 /* --------------------------------------------- */
 
 h1 {
@@ -74,6 +76,77 @@ h1, h2, h3, h4, h5 {
 h6 {
     letter-spacing: 3px;
     font-size: 100%;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: -5px;
+}
+
+h2, h3 {
+    font-weight: 100;
+}
+
+hr {
+    color: #dda3ff;
+    background-color: #dda3ff;
+    border-color: #dda3ff;
+    border-width: 1px;
+    margin: 12px 40%;
+}
+
+hr:before {
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: gold;
+    left: 50%;
+    margin: -7px;
+}
+
+.about-text hr {
+    margin: 12px 20%;
+}
+
+.about-text hr:before {
+    left: 66%;
+}
+
+/*h2:after {
+    display: block;
+    height: 2px;
+    background-color:#dda3ff;
+    content: " ";
+    width: 100px;
+    margin: 1% auto;
+}
+
+.container {
+    width: 100px;
+    height: 1px;
+    background-color: gold;
+    position: relative;
+}
+
+#circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background-color: #dda3ff;
+    border: solid 2px gold;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    left: calc(50% - 5px);
+}*/
+
+.short-desc {
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 /* --------------------------------------------- */
@@ -102,8 +175,9 @@ section.about {
 
 .about img {
     float: left;
-    width: 40%;
+    width: 80%;
     height: auto;
+    padding-left: 30%
 }
 
 .about-text {
@@ -112,6 +186,7 @@ section.about {
     width: 100%;
     height: auto;
     vertical-align: center;
+    padding-right: 30%;
 }
 
 .about-text h2 {
@@ -124,6 +199,127 @@ section.about {
 
 .social-links li {
     clear: both;
+    width: 32%;
     display: inline-block;
-    padding: 0 10%;
+    font-size: 250%;
+    padding-top: 5%;
+}
+
+.social-links a:link,
+.social-links a:visited {
+    color: #dda3ff;
+    transition: color 0.2s;
+}
+
+.social-links a#linkedin:hover,
+.social-links a#linkedin:active {
+    color: #0077b5;
+    transform: color;
+    transition: 0.2s;
+}
+
+.social-links a#facebook:hover,
+.social-links a#facebook:active {
+    color: #1877f2;
+    transform: color;
+    transition: 0.3s;
+}
+
+.social-links a#github:hover,
+.social-links a#github:active {
+    color: #24292e;
+    transform: color;
+    transition: 0.3s;
+}
+
+ion-icon#github {
+    background-color: #d6d6d6 transparent;
+    transition: background-color 0.3s;
+    border-radius: 200px;
+}
+
+ion-icon#github:hover,
+ion-icon#github:active,
+ion-icon#github:link,
+ion-icon#github:visited{
+    background-color: #d6d6d6;
+    border-radius: 200px;
+}
+
+/* --------------------------------------------- */
+/* SKILLS */
+/* --------------------------------------------- */
+
+
+/*#diamond,
+#diamond:after,
+#diamond-border,
+#diamond-border:after,
+.skills ion-icon {
+    transform:translate(-);
+}*/
+
+.skill-icon-container {
+    padding-left: 35%;
+    vertical-align:center;
+}
+
+.skills h3,
+.skills .skill-copy {
+    text-align: center;
+}
+
+.skills h3 {
+    transform:translate(0, -475%);
+}
+
+.skills .skill-copy:first-of-type {
+    transform:translate(0, -100%);
+}
+
+#diamond {
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-bottom-color: #dda3ff;
+    position: relative;
+    top: -125.5px;
+    left: 6px;
+}
+
+#diamond:after {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 40px;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-top-color: #dda3ff;
+}
+
+#diamond-border {
+    width: 0;
+    height: 0;
+    border: 46px solid transparent;
+    border-bottom-color: gold;
+    position: relative;
+    top: -46px;
+}
+
+#diamond-border:after {
+    content: '';
+    position: absolute;
+    left: -46px;
+    top: 46px;
+    width: 0;
+    height: 0;
+    border: 46px solid transparent;
+    border-top-color: gold;
+}
+
+.skills ion-icon {
+    font-size: 200%;
+    color: gold;
+    transform:translate(94%, -444%);
 }
