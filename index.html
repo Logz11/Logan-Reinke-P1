@@ -64,9 +64,12 @@
                     <div class = "about-text">
                         <h2>About Me</h2>
                         <hr>
-                        <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam, cupiditate molestiae ab cumque voluptatibus 
-                            officia! Sed soluta dolor eaque ipsum voluptatum natus tempora facere nesciunt, deserunt est, explicabo aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam, cupiditate molestiae ab cumque voluptatibus
-                            officia! Sed soluta dolor eaque ipsum voluptatum natus tempora facere nesciunt, deserunt est, explicabo aliquam?</p>
+                        <p class="about">Former English teacher&mdash;and current nerd&mdash;who decided to turn his love for puzzles into a career. I've always had
+                            a knack for, and interest in, solving problems, and what program works perfectly on the first compile? I believe that my background in 
+                            linguistics and language allows me to adapt to machine language just as well. I believe programming is more an art than it is a science,
+                            and I take pride in writing concise, well-documented code. Take a look at some of my work and I'm sure
+                            you'll agree.
+                        </p>
                         <div class="row">
                             <ul class="social-links">
                                 <li><a class="social" id="facebook" href="https://www.facebook.com/logan.reinke.3"><ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -104,7 +107,7 @@
                         <ion-icon name="color-palette"></ion-icon>
                     </div>
                     <h3>Graphic Design</h3>
-                    <p class="skill-copy">Commodo viverra maecenas accumsan lacus vel
+                    <p class="skill-copy graphic-design">Commodo viverra maecenas accumsan lacus vel
                     facilisis. Eget dolor morbi non arcu risus quis. Morbi tristique senectus et netus.</p>
                 </div>
                 <div class="col span-1-of-3">
@@ -131,27 +134,29 @@
                     <img class="portfolio-pic" src="Resources/images/Scarab pic.jpg">
                 </div>
                 <div class="col span-1-of-2">
-                    <h5>Web Development</h5>
-                    <h4>Scarab Website</h4>
-                    <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="view-details">View Details</p>
+                    <div class="portfolio-text odd">
+                        <h5>Web Development</h5>
+                        <h4>Scarab Website</h4>
+                        <p class="project-desc">Scarab is the first web project I've designed and coded from start to finish.</p>
+                        <a href="#">View Details</a>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <img class="portfolio-pic" src="Resources/images/Telesto V3.5.jpg">
+                    <div class="portfolio-text even">
+                        <h5>Graphic Design</h5>
+                        <h4>Photo Manipulation & Print Designs</h4>
+                        <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <a href="#">View Details</a>
+                    </div>
                 </div>
                 <div class="col span-1-of-2">
-                    <h5>Graphic Design</h5>
-                    <h4>Photo Manipulation & Print Designs</h4>
-                    <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="view-details">View Details</p>
+                    <img class="portfolio-pic" src="Resources/images/Telesto V3.5.jpg">
                 </div>
             </div>
             <div class="row">
@@ -159,14 +164,16 @@
                     <img class="portfolio-pic" src="Resources/images/chess.jpeg">
                 </div>
                 <div class="col span-1-of-2">
-                    <h5>Software Development</h5>
-                    <h4>Rock, Paper, Fireball</h4>
-                    <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="view-details">View Details</p>
+                    <div class="portfolio-text odd">
+                        <h5>Software Development</h5>
+                        <h4>Rock, Paper, Fireball</h4>
+                        <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <a href="#">View Details</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -185,6 +192,7 @@
                         </div>
                         <div class="col span-2-of-3">
                             <input type="text" name="name" id="name" placeholder="Your name" required>
+                            <span>*</span>
                         </div>
 
                     </div>
@@ -193,7 +201,17 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <input type="email" name="email" id="emailAddress1" placeholder="Your email" required>
+                            <span>*</span>
+                        </div>
+
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Confirm Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="emailAddress2" placeholder="Re-enter your email" required>
+                            <span>*</span>
                         </div>
 
                     </div>
@@ -206,7 +224,6 @@
                                 <option value="web-development">Web Development</option>
                                 <option value="graphic-design">Graphic Design</option>
                                 <option value="software-engineering">Software Engineering</option>
-                                <option value="database-management">Database Management</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -226,7 +243,12 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
+                            <!---<input type="submit" id="submitPopup" value="Send it!" href="#" submit-popup="This has not yet been enabled">--->
+                            <div class="popup" id="popup" onclick="">Send it!<span class="popup-text" id="myPopup">This button has been temporarily disabled. I apologize for the inconvenience!
+                                Please send all business inquiries to my LinkedIn profile through the link above. Thank you!
+                            </span>
+
+                            </div>    
                         </div>
                 
                     </div>
