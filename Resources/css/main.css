@@ -31,6 +31,7 @@ body {
     /*background: linear-gradient(to bottom right, #00dbde, #fc00ff);*/
     width: 100%;
     margin: 0 auto;
+    height: 100%;
 }
 
 main {
@@ -269,6 +270,7 @@ ion-icon#github:active {
 
 .skills {
     padding-bottom: 5%;
+    height: 80vh;
 }
 
 /*#diamond,
@@ -291,18 +293,18 @@ ion-icon#github:active {
 }
 
 .skills h3 {
-    transform:translate(0, -450%);
+    transform:translate(0, -400%);
     letter-spacing: 1px;
 }
 
 .skills .skill-copy {
-    transform:translate(0, -110%);
+    transform:translate(0, -90%);
     letter-spacing: 1px;
     line-height: 140%;
 }
 
 .skills .skill-copy.graphic-design {
-    transform:translate(0, -146%);
+    transform:translate(0, -120%);
 }
 
 #diamond {
@@ -365,16 +367,15 @@ COLUMN, WHICH WOULD THROW OFF THE SYMMETRY*/
 /* --------------------------------------------- */
 
 .portfolio {
-    padding: 0 2%;
+}
+
+.portfolio-container {
+    padding: 5%;
 }
 
 .portfolio-pic {
     width: 100%;
     height: auto;
-}
-
-.portfolio .short-desc {
-    padding-bottom: 5%;
 }
 
 .portfolio-text {
@@ -393,8 +394,37 @@ COLUMN, WHICH WOULD THROW OFF THE SYMMETRY*/
 /* CONTACT ME */
 /* --------------------------------------------- */
 
+.contact {
+    height:80vh;
+}
+
+.contact-text {
+    padding-bottom: 2%;
+}
+
 .contact-form {
-    padding-left: 25%;
+    padding-left: 30%;
+}
+
+input,
+textarea,
+select {
+    margin-top: 2%;
+}
+
+select,
+input {
+    width: 30%;
+}
+
+label {
+    display: inline-block;
+    margin-top: 4%;
+}
+
+textarea {
+    width:50%;
+    height: 100px;
 }
 
 .popup {
