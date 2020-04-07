@@ -366,7 +366,16 @@ COLUMN, WHICH WOULD THROW OFF THE SYMMETRY*/
 /* PORTFOLIO */
 /* --------------------------------------------- */
 
-.portfolio {
+.portfolio a:link,
+.portfolio a:visited {
+    text-decoration: none;
+    color: #dda3ff;
+    transition: color 0.3s;
+}
+
+.portfolio a:hover,
+.portfolio a:active {
+    color: #8a669f;
 }
 
 .portfolio-container {
