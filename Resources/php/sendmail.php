@@ -22,9 +22,9 @@
 
     <!------SCRIPTS---------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Resources/js/main.js"></script>
 </head>
 
 <body>
@@ -135,63 +135,14 @@
             <div class="portfolio-container">
                 <div class="row">
                     <div class="col span-1-of-2">
-                        <div class="slider">
-                            <ul class="slides">
-                                <li class="slide">
-                                    <img class="portfolio-pic" src="Resources/images/gogo2.PNG">
-                                </li>
-                                <li class="slide">
-                                    <img class="portfolio-pic" src="Resources/images/Scarab pic.jpg">
-                                </li>
-                                <li class="slide">
-                                    <img class="portfolio-pic" src="Resources/images/the_fairy_ring.PNG">
-                                </li>
-                                <li class="slide">
-                                    <img class="portfolio-pic" src="Resources/images/gogo2.PNG">
-                                </li>
-                            </ul>
-                        </div>
+                        <img class="portfolio-pic" src="Resources/images/Scarab pic.jpg">
                     </div>
                     <div class="col span-1-of-2">
                         <div class="portfolio-text odd">
-                            <ul class="project-slider-desc-list">
-                                <li class="project-slider-desc-textbox">
-                                    <h5>Web Development</h5>
-                                    <h4>GoGo! Website</h4>
-                                    <p class="project-desc">GoGo! is an application developed to optimize school bus routes and reduce time loss and fuel waste by 
-                                        avoiding unnecessary stops. By integrating the Google Maps & Directions APIs with a JavaScript selector, GoGo! allows 
-                                        users to specify any number of destinations from a predefined list and then returns an optimized route based on which students
-                                        have been scanned onto the bus.
-                                    </p>
-                                    <a href="https://github.com/Logz11/Bug_Tracker">View Details</a>
-                                </li>
-                                <li class="project-slider-desc-textbox">
-                                    <h5>Web Development</h5>
-                                    <h4>Scarab Website</h4>
-                                    <p class="project-desc">Scarab was the first web project I've designed and coded from start to finish on my own. At the
-                                        moment Scarab is only a
-                                        concept piece I made for practice,
-                                    </p>
-                                    <a href="https://github.com/Logz11/Bug_Tracker">View Details</a>
-                                </li>
-                                <li class="project-slider-desc-textbox">
-                                    <h5>Web Development</h5>
-                                    <h4>Scarab Website</h4>
-                                    <p class="project-desc">FAIRY RING SLIDE
-                                    </p>
-                                    <a href="https://github.com/Logz11/Bug_Tracker">View Details</a>
-                                </li>
-                                <li class="project-slider-desc-textbox">
-                                    <h5>Web Development</h5>
-                                    <h4>Scarab Website</h4>
-                                    <p class="project-desc">GoGo! is an application developed to optimize school bus routes and reduce time loss and fuel waste by 
-                                        avoiding unnecessary stops. By integrating the Google Maps & Directions APIs with a JavaScript selector, GoGo! allows 
-                                        users to specify any number of destinations from a predefined list and then returns an optimized route based on which students
-                                        have been scanned onto the bus.
-                                    </p>
-                                    <a href="https://github.com/Logz11/Bug_Tracker">View Details</a>
-                                </li>
-                            </ul>
+                            <h5>Web Development</h5>
+                            <h4>Scarab Website</h4>
+                            <p class="project-desc">Scarab is the first web project I've designed and coded from start to finish.</p>
+                            <a href="#">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -201,13 +152,13 @@
                     <div class="col span-1-of-2">
                         <div class="portfolio-text even">
                             <h5>Graphic Design</h5>
-                            <h4>Photo Manipulation</h4>
-                            <p class="project-desc">I'm pretty good at making things look good. I know my way around the Adobe Creative Suite and can help you pick a
-                                color palette, recolor or touch-up some photos, and even help you design a logo. Whether you're just starting your website and need 
-                                someone to build you a wireframe, or you're just looking to add some cool transitions and effects to make your site stand out, I'm sure
-                                I can help.
-                            </p>
-                            <a href="https://1drv.ms/u/s!Atq-YmVWKGH5gw6sZZop8VEsWS1L?e=0V9x15">View Details</a>
+                            <h4>Photo Manipulation & Print Designs</h4>
+                            <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">View Details</a>
                         </div>
                     </div>
                     <div class="col span-1-of-2">
@@ -222,33 +173,67 @@
                     </div>
                     <div class="col span-1-of-2">
                         <div class="portfolio-text odd">
-                            <h5>Software Engineering</h5>
+                            <h5>Software Development</h5>
                             <h4>Rock, Paper, Fireball</h4>
-                            <p class="project-desc">Rock, Paper Fireball is a text-based, graphical MUD adventure game I built with Java. It includes some ASCII art as
-                                an homage to the original MUDs, along with some JPG files for additional fantasy flavor. In addition, RPF utilizes a selection sort algorithm 
-                                to calculate, organize, and display high scores. Feel free to give it a play!
-                            </p>
-                            <a href="https://github.com/Logz11/ITDEV110-Individual-Project">View Details</a>
+                            <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section class="contact" id="contact">
             <div class="contact-text">
-                <h2>Contact</h2>
+                <!--<h2>Contact</h2>
                 <hr>
-                <p class="short-desc">Let's Get to Work</p>
+                <p class="short-desc">Let's Get to Work</p>-->
+
+                <?php
+            if (isset($_REQUEST['email1'])) { //if "email" variable is filled out, send email
+            
+                $admin_email = "Logan.Reinke@outlook.com"; 
+
+            
+                $email = $_REQUEST['email1'];
+                $name = $_REQUEST['name'];
+                $subject = $_REQUEST['services']; 
+                $message = $_REQUEST['message']; 
+                        
+                $body  = "From: " . $name . "\n"; 
+                $body .= "Email: " . $email . "\n";
+                $body .= "Message: " . $message;
+            
+                $headers = "From: " . $name . " <" . $email . "> \r\n";
+                $headers .= "CC: " . $name . " <" . $email . ">";
+                
+                mail($admin_email, $subject, $body, $headers); 
+                
+                echo "<h2>Thank you for the email!</h2>";
+                echo "<hr>";
+                echo "<p class='short-desc'>I'll get back to you as soon as I can</p>";
+                }
+            
+                else  { 
+                    echo "<h2>There has been an error!</h2>";
+                    echo "<hr>";
+                    echo"<p class='short-desc'>So sorry about that! please try again later!</p>";
+                }
+            ?>
+
             </div>
             <div class="row">
-                <form method="post" action="sendmail.php" name="contact-form" class="contact-form" id="contact-form">
+                <form method="post" action="sendmail.php" class="contact-form" id="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                            <input type="text" name="name" id="name" placeholder="Your name" value="<?php echo $_REQUEST['name'] ?>" disabled>
                             <span>*</span>
                         </div>
 
@@ -258,7 +243,7 @@
                             <label for="email1">Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email1" id="emailAddress1" placeholder="Your email" required>
+                            <input type="email" name="email1" id="emailAddress1" placeholder="Your email" value="<?php echo $_REQUEST['email1'] ?>" disabled>
                             <span>*</span>
                         </div>
 
@@ -267,7 +252,7 @@
                             <label for="email2">Confirm Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email2" id="emailAddress2" placeholder="Re-enter your email" required>
+                            <input type="email" name="email2" id="emailAddress2" placeholder="Re-enter your email" value="<?php echo $_REQUEST['email1'] ?>" disabled>
                             <span>*</span>
                         </div>
 
@@ -277,7 +262,7 @@
                             <label for="services">Services</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <select name="services" id="services">
+                            <select name="services" id="services" value="<?php echo $_REQUEST['services'] ?>" disabled>>
                                 <option value="web-development">Web Development</option>
                                 <option value="graphic-design">Graphic Design</option>
                                 <option value="software-engineering">Software Engineering</option>
@@ -288,10 +273,10 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>How Can I Help?</label>
+                            <label>What it do?</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
+                            <textarea name="message" disabled><?php echo $_REQUEST['message'] ?></textarea>
                         </div>
 
                     </div>
@@ -311,45 +296,13 @@
 
         <footer>
             <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="nav-link">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="nav-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a class="social" id="facebook" href="https://www.facebook.com/logan.reinke.3">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a></li>
-                        <li><a class="social" id="github" href="https://github.com/Logz11">
-                                <ion-icon id="github" name="logo-github"></ion-icon>
-                            </a></li>
-                        <li><a class="social" id="linkedin" href="https://www.linkedin.com/in/logan-reinke/">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="center-copyright">
-                <p>Copyright &copy; 2020</p>
+                <p class="footer">&copy; 2020 Logan Reinke</p>
             </div>
         </footer>
+
+
+
     </main>
-    <script src="Resources/js/main.js"></script>
 </body>
 
 </html>

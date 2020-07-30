@@ -1,14 +1,30 @@
 /* --------------------------------------------- */
-/* BASIC SETUP */
+/* COLOR PALETTE*/
 /* --------------------------------------------- */
 
-/*Lilac color = #dda3ff
-Gray font color = #cecece*/
+/* COLORS */
+/* BASE / BACKGROUND (EGGPLANT) - #221e3f;*/
+/* ACCENTS (GOLD) - #ffd700*/
+/* SECONDARY FONT (LIGHT ASH GRAY) - #cecece*/
+
+/* GRADIENTS */
+/* DUSK - #dda3ff, #b295e8, #b7b0ff, #95a4e8, #a3ccff */
+/* DAWN - #dda3ff, #b295e8, #b7b0ff, #95a4e8, #a3ccff */
+/* NIGHT - #dda3ff, #b295e8, #b7b0ff, #95a4e8, #a3ccff */
+
+/* FONTS */
+/*LOGO - font-family: 'Permanent Marker'*/
+/*COPY - font-family: 'Lato'*/
+
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 html,
@@ -28,7 +44,6 @@ body {
 
 body {
     background: repeating-linear-gradient(to bottom right, #dda3ff, #b295e8, #b7b0ff, #95a4e8, #a3ccff);
-    /*background: linear-gradient(to bottom right, #00dbde, #fc00ff);*/
     width: 100%;
     margin: 0 auto;
     height: 100%;
@@ -47,10 +62,43 @@ main {
 
 .top-nav {
     position: fixed;
+    top: 0;
+    transition: 0.6s;
+    width: 90%;
+    z-index: 1;
 }
 
 .nav-list {
-    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 3% auto;
+    justify-content: space-evenly;
+    transition: 0.6s;
+}
+
+.top-nav .nav-list li {
+    width: fit-content;
+    height: auto;
+    transition: 0.6s;
+}
+
+.top-nav .nav-list.sticky {
+    margin-top: 0;
+    width: 88%;
+    padding: 5px 0;
+    background-color: rgb(45, 45, 45, 80%);
+    transition: 0.6s;
+    border-radius: 0 0 200px 200px;
+}
+
+.top-nav .nav-list.sticky:hover {
+    background-color: rgb(45, 45, 45, 100%);
+}
+
+.top-nav .nav-list.hidden {
+    background-color: rgb(45, 45, 45, 0);
+    transition: 0.6s;
 }
 
 .nav-link {
@@ -59,18 +107,30 @@ main {
 }
 
 .top-nav a:link,
-.top-nav a:visited {
+.top-nav a:visited,
+footer .nav-list a:link,
+footer .nav-list a:visited {
     font-family: 'Permanent Marker';
     color: #cecece;
-}
-
-.top-nav a:hover,
-.top-nav a:active {
+    transition: color 0.3s, background 0.3s;
     background: -webkit-linear-gradient(#dda3ff, #b295e8, #b7b0ff, #95a4e8, #a3ccff);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 100%;
+    font-size: 125%;
+}
+
+.top-nav a:link,
+.top-nav a:visited {
+    font-size: 150%;}
+
+.top-nav a:hover,
+.top-nav a:active,
+footer .nav-list a:hover,
+footer .nav-list a:active {
+    color: transparent;
+    background: -webkit-linear-gradient(#dda3ff, #b295e8, #b7b0ff, #95a4e8, #a3ccff);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /* --------------------------------------------- */
@@ -85,6 +145,7 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -98,6 +159,7 @@ h5 {
 h6 {
     letter-spacing: 3px;
     font-size: 100%;
+    margin-top: 3%;
 }
 
 h2 {
@@ -124,7 +186,7 @@ hr:before {
     position: absolute;
     height: 15px;
     width: 15px;
-    background: gold;
+    background: #ffd700;
     left: 50%;
     margin: -7px;
 }
@@ -182,7 +244,7 @@ header {
 .landing-text {
     position: absolute;
     left: 40%;
-    top: 40%;
+    top: 45%;
     transform:translate(-32.5%, -30%);
     text-align: center;
 }
@@ -384,7 +446,7 @@ COLUMN, WHICH WOULD THROW OFF THE SYMMETRY*/
 
 .portfolio-pic {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .portfolio-text {
@@ -399,12 +461,44 @@ COLUMN, WHICH WOULD THROW OFF THE SYMMETRY*/
     text-align: left;
 }
 
+.slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow:  goldenrod transparent;
+    transition: box-shadow 0.2s;
+}
+
+/*#slider:hover{
+    box-shadow: 0 4px 8px 0 rgba(218, 165, 32, 0.2);
+}*/
+
+.slider .slides{
+    display: block;
+    width: 6000px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 300px;
+}
+
+.slider:hover {
+    box-shadow: 0 4px 8px 0 rgba(218, 165, 32, 0.2);
+}
+
 /* --------------------------------------------- */
 /* CONTACT ME */
 /* --------------------------------------------- */
 
 .contact {
-    height:80vh;
+    height:auto;
+    min-height: 80vh;
 }
 
 .contact-text {
@@ -434,6 +528,194 @@ label {
 textarea {
     width:50%;
     height: 100px;
+}
+
+#form-button {
+    cursor: pointer;
+    border-radius: 200px;
+    outline:none;
+    border: none;
+    padding: 2% 6%;
+    color: #dda3ff;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #dda3ff;
+    transition: color, background-color, all 0.3s;
+}
+
+#form-button:hover,
+#form-button:active {
+    background-color: #dda3ff;
+    color: #221e3f;
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+
+footer {
+    text-align: center;
+    background-color: rgb(45, 45, 45);
+}
+
+
+footer .nav-list {
+    padding-top: 2.5%;
+}
+
+@-webkit-keyframes fadeUp{
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.animate {
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    -webkit-animation-fillmode: both;
+}
+
+/* --------------------------------------------- */
+/* FADE ONTO SCREEN - FROM BOTTOM --> TOP */
+/* --------------------------------------------- */
+
+@keyframes fadeUp{
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.fadeUp {
+    -webkit-animation-name:fadeUp;
+    animation-name: fadeUp;
+}
+
+/* --------------------------------------------- */
+/* FADE ONTO SCREEN - FROM TOP --> BOTTOM */
+/* --------------------------------------------- */
+
+@-webkit-keyframes fadeDown{
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeDown{
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeDown {
+    -webkit-animation-name:fadeDown;
+    animation-name: fadeDown;
+}
+
+/* --------------------------------------------- */
+/* FADE ONTO SCREEN - IN PLACE */
+/* --------------------------------------------- */
+
+@-webkit-keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name:fadeIn;
+    animation-name: fadeIn;
+}
+
+/* --------------------------------------------- */
+/* FADE FROM SCREEN - IN PLACE */
+/* --------------------------------------------- */
+
+@-webkit-keyframes fadeOut{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name:fadeOut;
+    animation-name: fadeOut;
+}
+
+
+/* --------------------------------------------- */
+/* GRAVEYARD */
+/* ---------------------------------------------
+
+footer ul.nav-list {
+    vertical-align: center;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+}
+
+footer p.footer {
+    padding-top: 1.5%;
 }
 
 .popup {
@@ -497,18 +779,4 @@ textarea {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
-
-/* --------------------------------------------- */
-/* FOOTER */
-/* --------------------------------------------- */
-
-footer {
-    text-align: center;
-    height: 50px;
-    background-color: rgb(45, 45, 45);
-    color: #939393;
-}
-
-footer p.footer {
-    padding-top: 1.5%;
-}
+*/
